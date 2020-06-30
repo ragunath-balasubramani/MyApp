@@ -1,0 +1,50 @@
+<div class="main-container">
+    <div class="side-content">
+        <div class="intro-content">
+            <div class="intro-title font-1">MyApp</div>
+            <div class="sub-head font-2">Welcome !</div>
+            <div class="add-cont font-2">More fun More entertainment waiting for you</div>
+            <div class="new-user">
+                <p class="font-3">Already a member of MyApp</p>
+                <div class="login-btn font-3" (click)="loginClick()">Login</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-content">
+        <div class="user-form-container">
+            <div class="user-login-frm">
+                <p class="frm-title font-2">Signup</p>
+                <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+                    <div class="mobile-container font-2">
+                        <div class="icon-container"><i class="fas fa-mobile icons"></i></div>
+                        <div class="side-border"></div>
+                        <input formControlName="mobile" class="mobile-inp frm-inp font-2" type="text" placeholder="Mobile Number">
+                    </div>
+                    <div class="pass-container font-2">
+                        <div class="icon-container"><i class="fas fa-unlock-alt icons"></i></div>
+                        <div class="side-border"></div>
+                        <input formControlName="password" class="password-inp frm-inp font-2" type="text" placeholder="Password">
+                    </div>
+                    <div class="con-pass-container font-2">
+                        <div class="icon-container"><i class="fas fa-unlock-alt icons"></i></div>
+                        <div class="side-border"></div>
+                        <input formControlName="c_password" class="con-password-inp frm-inp font-2" type="text" placeholder="Confirm Password">
+                    </div>
+                    <div class="user-agreement font-4">
+                        If you click go you are agree our terms and conditions
+                    </div>
+                    <div class="sub-container">
+                        <input class="submit-btn font-2" type="submit" value="GO">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="new-user-mob">
+            <p>Already a member of MyApp</p>
+            <div class="login-btn" (click)="loginClick()">Login</div>
+        </div>
+        <div class="copy-content">
+            MyApp@2020
+        </div>
+    </div>
+</div>
